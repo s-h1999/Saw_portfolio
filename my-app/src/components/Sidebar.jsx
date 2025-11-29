@@ -58,13 +58,13 @@ export default function Sidebar({ active, scrollToSection }) {
         <a href="https://www.facebook.com/share/1FixKYf8Tu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-400 hover:text-gray-200 transition-colors duration-200">
           <FaFacebook size={30} />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-gray-200 transition-colors duration-200">
+        <a href="https://www.instagram.com/sawehthalay?igsh=ZTJyaXphaDNxdTVm&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-gray-200 transition-colors duration-200">
           <FaInstagram size={30} />
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-400 hover:text-gray-200 transition-colors duration-200">
+        <a href="https://github.com/s-h1999" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-400 hover:text-gray-200 transition-colors duration-200">
           <FaGithub size={30} />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-gray-200 transition-colors duration-200">
+        <a href="https://www.linkedin.com/in/saw-eh-thalay-htoo-ba7311344" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-gray-200 transition-colors duration-200">
           <FaLinkedin size={30} />
         </a>
       </div>
