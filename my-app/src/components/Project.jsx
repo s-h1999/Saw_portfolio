@@ -6,32 +6,34 @@ const projectData = [
     description: "This is a personal portfolio project built with React and Tailwind CSS. It showcases my skills, experiences, and projects in a modern and responsive design.",
     imageSrc: "/slo.png",
     imageAlt: "Project Preview: My Portfolio Website",
-    // You might want to add links here later:
-    // liveLink: "https://yourportfolio.com",
+    // add links here later:
+    liveLink: "https://saw-portfolio.vercel.app/",
     // repoLink: "https://github.com/your/repo",
   },
   {
     id: 2,
-    title: "E-commerce Redesign Concept",
-    description: "A front-end redesign of a mock e-commerce store focusing on improved mobile user experience and faster load times. Built with Next.js and styled-components.",
+    title: "School Management Systemm (in progress)",
+    description: "A comprehensive web application for managing school operations, including student enrollment, attendance tracking, and grade management.",
     imageSrc: "/slo.png", // Replace with a different image source later
-    imageAlt: "Project Preview: E-commerce Redesign",
+    imageAlt: "Project Preview: School Management System",
+    liveLink: "#",
   },
   {
     id: 3,
-    title: "Task Management App",
-    description: "A full-stack application for managing daily tasks and projects. Features user authentication, CRUD operations, and state management using Redux.",
+    title: "Teacher Campass (in progress)",
+    description: "A plafrom for teachers to manage their classes, assignments, and student progress. Developed using MERN stack with JWT authentication and RESTful APIs.",
     imageSrc: "/slo.png", // Replace with a different image source later
     imageAlt: "Project Preview: Task Management App",
+    liveLink: "#",
   },
 ];
 
 // 2. Define a reusable component using props
-function ProjectItem({ title, description, imageSrc, imageAlt }) {
-  // The original Tailwind CSS structure for a single project item
+function ProjectItem({ title, description, imageSrc, imageAlt, liveLink }) {
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-6 bg-neutral-800 p-4 rounded-lg border border-neutral-700 border-3 mb-6">
-      {/* Photo */}
+
+      {/* Image (uniform for all projects) */}
       <img
         src={imageSrc}
         alt={imageAlt}
@@ -41,20 +43,29 @@ function ProjectItem({ title, description, imageSrc, imageAlt }) {
       {/* Text beside the photo */}
       <div className="text-center md:text-left">
         <h3 className="text-xl text-gray-300 font-semibold mb-2">{title}</h3>
-        <p className="text-gray-300">
-          {description}
-        </p>
+        <p className="text-gray-300 mb-3">{description}</p>
+
+        {/* Live link button */}
+        {liveLink && (
+          <a
+            href={liveLink || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-4 py-2 bg-sky-600 text-gray-100 rounded hover:bg-sky-800 transition-colors text-sm font-medium"
+          >
+            Live Demo
+          </a>
+        )}
       </div>
     </div>
   );
 }
-
 // 3. Refactor the main component to use the data and the reusable component
 export default function Project() {
   return (
     <section id="PROJECT" className="p-4">
       <div className="max-w-3xl mx-auto px-1 lg:px-0">
-        
+
         <h2 className="text-gray-100 text-xl md:text-3xl font-medium relative mb-12">
           What I Create
 
@@ -73,6 +84,7 @@ export default function Project() {
             description={project.description}
             imageSrc={project.imageSrc}
             imageAlt={project.imageAlt}
+            liveLink={project.liveLink}
           />
         ))}
 
