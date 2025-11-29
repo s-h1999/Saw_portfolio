@@ -55,7 +55,7 @@ export default function Sidebar({ active, scrollToSection }) {
 
       {/* 2. SOCIAL ICONS BLOCK (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) */}
       <div className="hidden lg:flex space-x-4 mt-6">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-400 hover:text-gray-200 transition-colors duration-200">
+        <a href="https://www.facebook.com/share/1FixKYf8Tu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-400 hover:text-gray-200 transition-colors duration-200">
           <FaFacebook size={30} />
         </a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-gray-200 transition-colors duration-200">
