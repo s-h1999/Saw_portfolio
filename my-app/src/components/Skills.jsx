@@ -7,7 +7,7 @@ const skillData = [
   { id: 3, name: "JavaScript", percentage: "w-[40%]", level: "40%" },
   { id: 4, name: "React", percentage: "w-[40%]", level: "40%" },
   { id: 5, name: "Node.js / Express", percentage: "w-[20%]", level: "20%" },
-  { id: 6, name: "Databases (SQL/NoSQL)", percentage: "w-[40%]", level: "40%" },
+  { id: 6, name: "Databases (MySQL)", percentage: "w-[40%]", level: "40%" },
 ];
 
 // 2. Updated reusable component to accept and display the 'level' prop
